@@ -28,7 +28,6 @@
     <-->
 
     <!-- Teb -->
-    
     <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS"/>
     <rosparam file="$(find neo_simulation)/config/mpo_700/move_base/local_planner/teb_local_planner/teb_planner.yaml" command="load" />
     <!--><-->

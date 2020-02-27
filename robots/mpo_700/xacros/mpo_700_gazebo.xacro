@@ -106,7 +106,7 @@
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
-      <odometryRate>20.0</odometryRate>
+      <odometryRate>150.0</odometryRate>
       <robotBaseFrame>base_link</robotBaseFrame>
     </plugin>
   </gazebo>
@@ -157,6 +157,25 @@
     <sensor name="camera1" type="depth">
       <update_rate>15</update_rate>
       <hfov>70</hfov>
+      <camera name="head">
+        <image>
+          <width>320</width>
+          <height>240</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <!-- Noise is sampled independently per pixel on each frame.  
+               That pixel's noise value is added to each of its color
+               channels, which at that point lie in the range [0,1]. -->
+          <mean>0.0</mean>
+          <stddev>0.03</stddev>
+        </noise>
+      </camera>
       <plugin name="camera1_controller" filename="libgazebo_ros_openni_kinect.so">
         <!--<baseline>0.2</baseline>-->
         <alwaysOn>true</alwaysOn>
@@ -220,8 +239,4 @@
       </plugin>
       </sensor>
   </gazebo>
-
-
 </robot>
-
-

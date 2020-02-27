@@ -276,21 +276,21 @@
     </light>
   </library_lights>
   <library_images>
-    <image id="MarkerData_10_png" name="MarkerData_10_png">
-      <init_from>MarkerData_10.png</init_from>
+    <image id="MarkerData_9_png" name="MarkerData_9_png">
+      <init_from>MarkerData_9.png</init_from>
     </image>
   </library_images>
   <library_effects>
     <effect id="Material_001-effect">
       <profile_COMMON>
-        <newparam sid="MarkerData_10_png-surface">
+        <newparam sid="MarkerData_9_png-surface">
           <surface type="2D">
-            <init_from>MarkerData_10_png</init_from>
+            <init_from>MarkerData_9_png</init_from>
           </surface>
         </newparam>
-        <newparam sid="MarkerData_10_png-sampler">
+        <newparam sid="MarkerData_9_png-sampler">
           <sampler2D>
-            <source>MarkerData_10_png-surface</source>
+            <source>MarkerData_9_png-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -302,7 +302,7 @@
               <color sid="ambient">1 1 1 1</color>
             </ambient>
             <diffuse>
-              <texture texture="MarkerData_10_png-sampler"/>
+              <texture texture="MarkerData_9_png-sampler"/>
             </diffuse>
             <specular>
               <color sid="specular">1 1 1 1</color>
