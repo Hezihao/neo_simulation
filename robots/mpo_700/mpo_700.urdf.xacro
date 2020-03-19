@@ -168,7 +168,7 @@
   </xacro:camera>
   <-->
   <xacro:depth_camera name="camera" parent="base_link">
-    <origin xyz="0.25 0 0.45" rpy="0 0 0" />
+    <origin xyz="0.228 0 0.461" rpy="0 0 0" />
   </xacro:depth_camera>
 
   <joint name="camera_optical_joint" type="fixed">

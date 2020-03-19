@@ -180,12 +180,12 @@
         <!--<baseline>0.2</baseline>-->
         <alwaysOn>true</alwaysOn>
         <updateRate>0.0</updateRate>
-        <cameraName>camera1_ir</cameraName>
-        <imageTopicName>/camera1/depth/image_raw</imageTopicName>
-        <cameraInfoTopicName>/camera1/depth/camera_info</cameraInfoTopicName>
-        <depthImageTopicName>/camera1depth/depth_raw</depthImageTopicName>
-        <depthImageInfoTopicName>/camera1/depth/camera_info</depthImageInfoTopicName>
-        <pointCloudTopicName>/camera1/depth/points</pointCloudTopicName>
+        <cameraName>camera_ir</cameraName>
+        <imageTopicName>/camera/depth/image_raw</imageTopicName>
+        <cameraInfoTopicName>/camera/depth/camera_info</cameraInfoTopicName>
+        <depthImageTopicName>/camera/depth/depth_raw</depthImageTopicName>
+        <depthImageInfoTopicName>/camera/depth/camera_info</depthImageInfoTopicName>
+        <pointCloudTopicName>/camera/depth_registered/points</pointCloudTopicName>
         <frameName>camera_link_optical</frameName>
         <pointCloudCutoff>0.12</pointCloudCutoff>
         <pointCloudCutoffMax>3.0</pointCloudCutoffMax>
